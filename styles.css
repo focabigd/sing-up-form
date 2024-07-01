@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.images {
+    position:relative;
+}
+.image1  {
+    position:absolute;
+    z-index:-1;
+}
+.inside {
+    position: absolute;
+    width: 32%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 25rem;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: roboto;
+    font-size:40px;
+}
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: calc(35% + 0px);
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: white;
+}
+.image2  {
+    padding-right:300px;
+}
+.first-text {
+    font-size: 1.8em;
+    line-height: 1.6;
+    font-family: roboto;
+    position: absolute;
+    width: 50%;
+    padding-left:800px;
+    padding-top:150px;
+}
+.info {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background-color:rgb(56, 56, 56);
+    top: 400px;
+    left: 800px;
+    border: 1px solid rgb(243, 217, 167);
+}
+.info-text {
+    font-size:30px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}

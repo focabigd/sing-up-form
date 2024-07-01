@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="images">
+        <img class="image1" src="./photos/photo-1585202900225-6d3ac20a6962.avif" alt="Green Plant" height="950" width="600">
+        <div class="inside">
+            <img class="image2" src="./photos/odin-lined.png" alt="Odin Logo" height="150" width="100">
+            <div class="image-text">Odin</div>
+        </div>
+    </div>
+    <div class="part">
+        <div class="first-text">
+            Welcome to the world of flowers! 
+            We're thrilled to have you join us on your journey through our floral universe, 
+            full of color and natural beauty. 
+            Register now to explore a wide range of fresh flowers and elegant arrangements, 
+            perfect for any special occasion or to bring a smile to your loved ones' faces.
+        </div>
+        <div class="info">
+            <div class="info-text">Let's do this!</div>
+            <form id="sign-up-form" action="https://httpbin.org/post" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first_name">*First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Nicolaie" required>
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" placeholder="nicolaieguta@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">*Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Guta" required>
+                        <label for="phone-number">*Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" 
+                               title="Please enter a valid phone number" placeholder="1234567890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <label for="confirm-password">*Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
